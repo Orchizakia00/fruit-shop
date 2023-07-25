@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -20,16 +20,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
     <style>
-        .font-base{
+        .font-base {
             font-family: 'Lato', sans-serif;
         }
     </style>
+
+    <!-- customized tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="font-base">
-    <header>
+    <header class="max-w-screen-xl mx-auto">
         <!-- navbar section -->
         <nav>
+
+            <div class="navbar bg-base-100 bg-[#F85559] rounded-full mt-10">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <a class="btn btn-ghost normal-case text-xl text-white">
+                        <img src="./images/logo.png" alt="" class="w-10">Fruit Burst
+                    </a>
+                </div>
+                <div class="navbar-end relative">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full mr-2" />
+                    <i class="fa-solid fa-magnifying-glass absolute right-7"></i>
+                </div>
+            </div>
 
         </nav>
 
@@ -42,7 +84,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
 
 </body>
