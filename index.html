@@ -44,8 +44,8 @@
         <!-- navbar section -->
         <nav>
 
-            <div class="navbar bg-base-100 flex flex-row-reverse justify-between lg:flex-row lg:bg-[#F85559] rounded-full mt-10">
-                <div class="navbar-start pl-28">
+            <div class="navbar bg-base-100 flex flex-row-reverse justify-between lg:flex-row lg:bg-[#F85559] rounded-full lg:mt-10">
+                <div class="navbar-start pl-32 lg:pl-0">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -62,7 +62,7 @@
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <ul class="menu menu-horizontal hidden px-1 text-white">
+                    <ul class="invisible menu menu-horizontal px-1 text-white lg:visible">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -75,7 +75,7 @@
                         <img src="./images/logo.png" alt="" class="w-10">Fruit Burst
                     </a>
                 </div>
-                <div class="hidden lg:navbar-end relative">
+                <div class="invisible navbar-end lg:relative lg:visible">
                     <input type="text" placeholder="Search here"
                         class="input input-bordered w-full max-w-xs rounded-full mr-2" />
                     <i class="fa-solid fa-magnifying-glass absolute right-7"></i>
