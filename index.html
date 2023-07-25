@@ -44,9 +44,16 @@
         <!-- navbar section -->
         <nav>
 
-            <div class="navbar bg-base-100 bg-[#F85559] rounded-full mt-10">
-                <div class="navbar-start">
+            <div class="navbar bg-base-100 flex flex-row-reverse justify-between lg:flex-row lg:bg-[#F85559] rounded-full mt-10">
+                <div class="navbar-start pl-28">
                     <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
@@ -55,20 +62,22 @@
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <ul class="menu menu-horizontal px-1 text-white">
+                    <ul class="menu menu-horizontal hidden px-1 text-white">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                     </ul>
+                    
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <a class="btn btn-ghost normal-case text-xl text-white">
+                <div class="navbar-center lg:flex">
+                    <a class="btn btn-ghost normal-case text-xl lg:text-white">
                         <img src="./images/logo.png" alt="" class="w-10">Fruit Burst
                     </a>
                 </div>
-                <div class="navbar-end relative">
-                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full mr-2" />
+                <div class="hidden lg:navbar-end relative">
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered w-full max-w-xs rounded-full mr-2" />
                     <i class="fa-solid fa-magnifying-glass absolute right-7"></i>
                 </div>
             </div>
